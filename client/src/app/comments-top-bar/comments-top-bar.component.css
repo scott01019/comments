@@ -1,0 +1,15 @@
+.material-icons.md-18 { font-size: 18px; }
+
+a { 
+    text-decoration: none !important; 
+    color: var(--secondary) !important;
+}
+
+a:hover { 
+    color: black !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary) !important;
+    color: var(--light) !important;
+}

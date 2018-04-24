@@ -1,0 +1,11 @@
+<div class="row mx-1">
+  <img *ngIf="loggedIn" src="../assets/profile-pic.png" class="rounded img-fluid float-left ml-4 mr-2 col-1 align-top" alt="A profile picture.">
+  <img *ngIf="!loggedIn" src="../assets/profile-pic.png" class="rounded img-fluid float-left ml-4 mr-2 col-1 align-top" alt="A default profile picture.">
+  <div class="col-10">
+    <textarea class="form-control col-12" placeholder="Leave a comment..." rows="3"></textarea>
+    <button *ngIf="loggedIn" type="submit" class="btn submit btn-danger mt-1 float-right">SUBMIT</button>
+    <div *ngIf="!loggedIn" class="mt-1 float-right">
+      <p><small class="text-secondary">Log in to Post:</small></p>
+    </div>
+  </div>
+</div>

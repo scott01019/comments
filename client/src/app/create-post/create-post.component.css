@@ -1,0 +1,27 @@
+.material-icons.md-75 { font-size: 75px; }
+
+textarea:hover, 
+textarea:active, 
+textarea:focus,
+button:active,
+button:focus
+{
+    outline: none;
+    border: 1px solid var(--secondary) !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    padding: 0;
+    align-self: flex-start;
+}
+
+.btn.submit {
+    font-weight: bold;
+}

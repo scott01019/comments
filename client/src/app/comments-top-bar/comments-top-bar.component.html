@@ -1,0 +1,31 @@
+<ul class="list-inline">
+  <li class="list-inline-item mx-3">
+    <a class="comments-top-bar-link" href="#">
+      <span *ngIf="!favorited">
+        <i class="material-icons md-18 align-middle text-danger">favorite_border</i>
+        <small class="font-weight-bold">Favorite</small>
+      </span>
+      <span *ngIf="favorited">
+        <i class="material-icons md-18 align-middle text-danger">favorite</i>
+        <small class="font-weight-bold">Favorited</small>
+      </span>
+      <span class="badge badge-secondary align-text-bottom">{{ favorites }}</span>
+    </a>
+  </li>
+  <li class="list-inline-item mx-3">
+    <a class="coments-top-bar-link" href="#">
+      <i class="material-icons md-18 align-middle">share</i>
+      <small class="font-weight-bold">Share</small>
+    </a>
+  </li>
+  <li class="list-inline-item ml-2 mr-3 float-right dropdown">
+    <a class="dropdown-toggle top-nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <small>Sort By {{ selected }}</small>
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="#">Best</a>
+      <a class="dropdown-item" href="#">Newest</a>
+      <a class="dropdown-item" href="#">Oldest</a>
+    </div>
+  </li>
+</ul>

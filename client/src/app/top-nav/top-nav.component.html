@@ -1,0 +1,36 @@
+<ul class="list-inline mb-1">
+  <li class="list-inline-item mx-3 mt-2 border-danger font-weight-bold border-bottom-1">
+    {{ numberOfComments }} Comments
+  </li>
+  <li class="list-inline-item mx-3 mt-2">
+    <a href="#">{{ forumName }}</a>
+  </li>
+  <li class="list-inline-item ml-2 mr-3 mt-2 float-right dropdown">
+    <div *ngIf="!loggedIn">
+      <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Login
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Facebook</a>
+        <a class="dropdown-item" href="#">Twitter</a>
+        <a class="dropdown-item" href="#">Google</a>
+      </div>
+    </div>
+    <div *ngIf="loggedIn">
+      <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ userName }}
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Profile</a>
+        <a class="dropdown-item" href="#">Settings</a>
+        <a class="dropdown-item" href="#">Logout</a>
+      </div>
+    </div>
+  </li>
+  <li class="list-inline-item mt-2 float-right">
+    <a id="top-nav-notifications-link" href="#">
+      <i *ngIf="notifications" class="material-icons md-24 align-middle text-danger">chat</i>
+      <i *ngIf="!notifications" class="material-icons md-24 align-middle">chat_bubble_outline</i>
+    </a>
+  </li>
+</ul>

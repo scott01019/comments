@@ -1,0 +1,19 @@
+a { 
+    text-decoration: none !important; 
+    color: var(--secondary) !important;
+}
+
+a:hover { 
+    color: black !important;
+}
+
+.material-icons.md-24 { font-size: 24px; }
+
+.dropdown-item:hover {
+    background-color: var(--primary) !important;
+    color: var(--light) !important;
+}
+
+.border-bottom-1 {
+    border-bottom: solid 3px var(--danger);
+}
